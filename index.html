@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Expense Management</title>
+</head>
+
+<body>
+
+    <h1 class="main_heading">EXPENSE MANAGER</h1>
+
+    <div class="main_container">
+
+        <div class="bal_inc_exp">
+            <div class='bal item'>
+                <h1>Balance</h1>
+                <p id='balance'>Rs 0.00</p>
+            </div>
+
+            <div class='inc item'>
+                <h1>Income</h1>
+                <p id='income' class='income'>+ Rs. 0.00</p>
+
+            </div>
+
+            <div class='exp item'>
+                <h1>Expense</h1>
+                <p id='expense' class='expense'>- Rs. 0.00</p>
+
+            </div>
+        </div>
+
+
+
+        <form id="form">
+            <p class='mid heading'>ADD TRANSACTIONS</p>
+            <div class="user">
+                <label for='text'>Title</label>
+                <input type="text" id="text" placeholder='Enter title'>
+            </div>
+
+            <div class="user">
+                <label for='amount'>Amount</label>
+                <input type="text" id="amount" placeholder='-500(expense), +500(income)'>
+            </div>
+            <button class="btn">ADD</button>
+        </form>
+
+
+        <p class='last heading'>All Transactions</p>
+        <div class="history">
+            <ul id="list" class="list">
+                <!-- <li class='minus'>
+                cash<span>rs400</span>
+                <button class="deletebtn">x</button>
+            </li> -->
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
